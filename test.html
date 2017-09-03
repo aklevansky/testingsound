@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	button {
+	  margin:auto;
+	  display:block;
+	}
+  
+	</style>
+</head>
+<body>
+	<button onclick="testSound()">TEST SOUND</button>
+	<script>
+		function testSound() {
+			let msg = new SpeechSynthesisUtterance('Testing sound: one, two, three');
+			speechSynthesis.speak(msg);
+		}
+	</script>
+</body>
+</html>
